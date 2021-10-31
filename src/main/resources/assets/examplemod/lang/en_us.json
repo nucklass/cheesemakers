@@ -1,12 +1,9 @@
 {
-<<<<<<< HEAD
     "item.examplemod.deez_nutz" : "Deez Nuts",
-    "item.examplemod.cheeseblock" : "Cheesed to Meet You"
-=======
+    "item.examplemod.cheeseblock" : "Cheesed to Meet You",
     "item.examplemod.deez_nutz": "Deez Nuts",
     "item.examplemod.cheesium": "Cheesium Ingot",
     "item.examplemod.cheesecloth": "Cheesecloth",
     "item.examplemod.cheese_slice" : "Cheese Slice",
     "item.examplemod.pizza" : "Pizza"
->>>>>>> 008f915430ace612c4396ba413dc3115c04dbdf9
 }
