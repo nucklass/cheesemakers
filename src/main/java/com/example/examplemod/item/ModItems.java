@@ -1,6 +1,11 @@
 package com.example.examplemod.item;
  
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fmllegacy.RegistryObject;
@@ -23,6 +28,32 @@ public class ModItems {
 	ITEMS.register(
 				"cheesium",
 				() -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+				);
+
+	public static final RegistryObject<Item> CHEESIUM_SWORD =
+	ITEMS.register(
+				"cheesium_sword",
+				() -> new SwordItem(ModItemTier.CHEESIUM, 3, -1f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))
+				);
+	public static final RegistryObject<Item> CHEESIUM_PICKAXE =
+	ITEMS.register(
+				"cheesium_pickaxe",
+				() -> new PickaxeItem(ModItemTier.CHEESIUM, 1, -1.5f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))
+				);
+	public static final RegistryObject<Item> CHEESIUM_HOE =
+	ITEMS.register(
+				"cheesium_hoe",
+				() -> new HoeItem(ModItemTier.CHEESIUM, 0, -1.5f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))
+				);
+	public static final RegistryObject<Item> CHEESIUM_SHOVEL =
+	ITEMS.register(
+				"cheesium_shovel",
+				() -> new ShovelItem(ModItemTier.CHEESIUM, 0, -1.5f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))
+				);
+	public static final RegistryObject<Item> CHEESIUM_AXE =
+	ITEMS.register(
+				"cheesium_axe",
+				() -> new AxeItem(ModItemTier.CHEESIUM, 7, -1.5f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))
 				);
     
 	public static final RegistryObject<Item> CHEESECLOTH =
