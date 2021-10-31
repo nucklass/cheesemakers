@@ -17,6 +17,7 @@ import org.apache.logging.log4j.Logger;
 import net.minecraftforge.eventbus.api.IEventBus;
 import java.util.stream.Collectors;
 import com.example.examplemod.item.ModItems;
+import com.example.examplemod.block.ModBlocks;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("examplemod")
@@ -30,7 +31,8 @@ public class ExampleMod
         IEventBus eventBus  = FMLJavaModLoadingContext.get().getModEventBus();
 
 	ModItems.register(eventBus);
-	
+	ModBlocks.register(eventBus);
+       
 	eventBus.addListener(this::setup);
 	
 	
