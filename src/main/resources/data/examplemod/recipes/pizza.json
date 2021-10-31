@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "BBB",
+        "FFF"
+    ],
+    "key": {
+        "#": {
+            "item": "examplemod:cheese_slice"
+        },
+        "B": {
+            "item": "minecraft:beetroot"
+        },
+        "F": {
+            "item": "minecraft:bread"
+        }
+    },
+    "result": {
+        "item": "examplemod:pizza",
+        "count": 1
+    }
+}
