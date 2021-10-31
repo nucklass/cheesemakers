@@ -1,5 +1,6 @@
 {
-    "item.examplemod.deez_nutz": "Deez Nuts",
+    "item.examplemod.deez_nutz" : "Deez Nuts",
+    "item.examplemod.cheeseblock" : "Cheesed to Meet You",
     "item.examplemod.cheesium": "Cheesium Ingot",
     "item.examplemod.cheesium_sword": "Cheesium Sword",
     "item.examplemod.cheesium_axe": "Cheesium Axe",
@@ -7,5 +8,6 @@
     "item.examplemod.cheesium_shovel": "Cheesium Shovel",
     "item.examplemod.cheesium_hoe": "Cheesium Hoe",
     "item.examplemod.cheesecloth": "Cheesecloth",
-    "item.examplemod.cheese_slice" : "Cheese Slice"
+    "item.examplemod.cheese_slice" : "Cheese Slice",
+    "item.examplemod.pizza" : "Pizza"
 }
