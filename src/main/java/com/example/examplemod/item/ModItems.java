@@ -36,6 +36,12 @@ public class ModItems {
 		"cheese_slice", 
 		() -> new CheeseSliceItem(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))
 	);
+
+	public static final RegistryObject<Item> PIZZA_ITEM = 
+	ITEMS.register(
+        "pizza",
+        () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+    );
     
     public static void register(IEventBus eventbus) {
 		ITEMS.register(eventbus);
