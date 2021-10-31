@@ -18,8 +18,32 @@ public class ModItems {
 		       "deeznutz",
 		       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
 		       );
+
+	public static final RegistryObject<Item> CHEESIUM =
+	ITEMS.register(
+				"cheesium",
+				() -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+				);
     
-    public static void register(IEventBus eventbus){
-	ITEMS.register(eventbus);
+	public static final RegistryObject<Item> CHEESECLOTH =
+	ITEMS.register(
+				"cheesecloth",
+				() -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+				);
+
+	public static final RegistryObject<Item> CHEESE_SLICE_ITEM = 
+	ITEMS.register(
+		"cheese_slice", 
+		() -> new CheeseSliceItem(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))
+	);
+
+	public static final RegistryObject<Item> PIZZA_ITEM = 
+	ITEMS.register(
+        "pizza",
+        () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+    );
+    
+    public static void register(IEventBus eventbus) {
+		ITEMS.register(eventbus);
     }
 }
