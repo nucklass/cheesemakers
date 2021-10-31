@@ -18,7 +18,19 @@ public class ModItems {
 		       "deeznutz",
 		       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
 		       );
+
+	public static final RegistryObject<Item> CHEESIUM =
+	ITEMS.register(
+				"cheesium",
+				() -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+				);
     
+	public static final RegistryObject<Item> CHEESECLOTH =
+	ITEMS.register(
+				"cheesecloth",
+				() -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+				);
+
     public static void register(IEventBus eventbus){
 	ITEMS.register(eventbus);
     }
