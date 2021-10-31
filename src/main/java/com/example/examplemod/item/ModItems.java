@@ -15,9 +15,21 @@ public class ModItems {
 
     public static final RegistryObject<Item> DEEZ_NUTS =
 	ITEMS.register(
-		"deeznutz",
-		() -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
-	);
+		       "deeznutz",
+		       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+		       );
+
+	public static final RegistryObject<Item> CHEESIUM =
+	ITEMS.register(
+				"cheesium",
+				() -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+				);
+    
+	public static final RegistryObject<Item> CHEESECLOTH =
+	ITEMS.register(
+				"cheesecloth",
+				() -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+				);
 
 	public static final RegistryObject<Item> CHEESE_SLICE_ITEM = 
 	ITEMS.register(
