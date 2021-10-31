@@ -15,11 +15,17 @@ public class ModItems {
 
     public static final RegistryObject<Item> DEEZ_NUTS =
 	ITEMS.register(
-		       "deeznutz",
-		       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
-		       );
+		"deeznutz",
+		() -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+	);
+
+	public static final RegistryObject<Item> CHEESE_SLICE_ITEM = 
+	ITEMS.register(
+		"cheese_slice", 
+		() -> new CheeseSliceItem(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))
+	);
     
-    public static void register(IEventBus eventbus){
-	ITEMS.register(eventbus);
+    public static void register(IEventBus eventbus) {
+		ITEMS.register(eventbus);
     }
 }
