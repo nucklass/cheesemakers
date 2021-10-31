@@ -31,7 +31,13 @@ public class ModItems {
 				() -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
 				);
 
-    public static void register(IEventBus eventbus){
-	ITEMS.register(eventbus);
+	public static final RegistryObject<Item> CHEESE_SLICE_ITEM = 
+	ITEMS.register(
+		"cheese_slice", 
+		() -> new CheeseSliceItem(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))
+	);
+    
+    public static void register(IEventBus eventbus) {
+		ITEMS.register(eventbus);
     }
 }

@@ -1,5 +1,6 @@
 {
     "item.examplemod.deez_nutz": "Deez Nuts",
     "item.examplemod.cheesium": "Cheesium Ingot",
-    "item.examplemod.cheesecloth": "Cheesecloth"
+    "item.examplemod.cheesecloth": "Cheesecloth",
+    "item.examplemod.cheese_slice" : "Cheese Slice"
 }
