@@ -21,30 +21,27 @@ import com.example.examplemod.block.ModBlocks;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("examplemod")
-public class ExampleMod
-{
-    // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+class ExampleMod() {
+  // Directly reference a log4j logger.
+  val LOGGER : Logger = LogManager.getLogger();
 
-    public ExampleMod() {
-        // Register the setup method for modloading
-        IEventBus eventBus  = FMLJavaModLoadingContext.get().getModEventBus();
+  // Register the setup method for modloading
+  var eventBus : IEventBus  = FMLJavaModLoadingContext.get().getModEventBus();
 
-	ModItems.register(eventBus);
-	ModBlocks.register(eventBus);
-       
-	eventBus.addListener(this::setup);
-	
-	
-	// Register ourselves for server and other game events we are interested in
-	    MinecraftForge.EVENT_BUS.register(this);
-    }
+  ModItems.register(eventBus);
+  ModBlocks.register(eventBus);
+    
+  //eventBus.addListener(this.setup(_));
+    
+    
+  // Register ourselves for server and other game events we are interested in
+  MinecraftForge.EVENT_BUS.register(this);
 
-    private void setup(final FMLCommonSetupEvent event)
-    {
-        // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
-    }
-
+  @SubscribeEvent
+  def setup(event : FMLCommonSetupEvent) {
+    // some preinit code
+    LOGGER.info("HELLO FROM PREINIT");
+    LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+  }
 }
+
